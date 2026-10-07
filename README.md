@@ -16,7 +16,7 @@ Este projeto foi criado com o objetivo de:
 
 ## 🧱 Estrutura do repositório
 
-A estrutura está organizada por uma pasta e quatro arquivos `.md`, cada um representando uma etapa diferente do processo de testes:
+A estrutura está organizada por uma pasta onde estarão os Cenários, e quatro arquivos `.md`, cada um representando uma etapa diferente do processo de testes:
 
 📁 **SIFIT**
 
