@@ -20,12 +20,14 @@ A estrutura está organizada por uma pasta e quatro arquivos `.md`, cada um repr
 
 📁 **SIFIT**
 
-SIFIT/ ├── CenariosdeTestes/ 
-       │ └── CT_RF(n)[Cenario].md 
+```SIFIT/ 
+       ├── Cenarios_de_Testes/ 
+       │   └── CT_RF(n)[Cenario].md 
        ├── 1-Analise_de_Requisitos.md 
        ├── 2-Plano_de_Testes.md 
        ├── 3-Relatorio_de_Bugs.md 
-       ├── 4-Relatorio_de_Testes.md
+       └── 4-Relatorio_de_Testes.md
+```
 
 
 ## 🧪 Metodologia / Técnicas aplicadas
