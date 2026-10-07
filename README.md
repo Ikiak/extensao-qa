@@ -20,7 +20,8 @@ A estrutura está organizada por uma pasta e quatro arquivos `.md`, cada um repr
 
 📁 **SIFIT**
 
-```SIFIT/ 
+```
+  SIFIT/ 
        ├── Cenarios_de_Testes/ 
        │   └── CT_RF(n)[Cenario].md 
        ├── 1-Analise_de_Requisitos.md 
