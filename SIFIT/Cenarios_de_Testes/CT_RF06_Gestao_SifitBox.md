@@ -37,7 +37,7 @@
 
 | **Passos**                                                         |
 | :---------------------------------------------------------------- |
-| **DADO** que navegamos para a ecrã de "Categorias CrossFit"        |
+| **DADO** que navegamos para a tela de "Categorias CrossFit"        |
 | **E** clicamos no botão de adição de nova categoria                |
 | **E** preenchemos o nome da categoria                              |
 | **QUANDO** confirmarmos o salvamento                               |  
