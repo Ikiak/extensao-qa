@@ -1,92 +1,70 @@
-## Cenário 01: Autenticação na plataforma SIFIT.
+# CT_RF01_Autenticacao_e_Acesso.md
 
-### Caso de Teste 01: Login com credenciais válidas.
+## Cenário 01: Autenticação e Acesso ao Sistema SIFIT.
 
-| ID        | Descrição                                                          |
-| :-------- | :----------------------------------------------------------------- |
-| C01-CT01 | O login será realizado com um nome de usuário e uma senha válidos. |
-
-| **Pré-condições**                                              |
-| :----------------------------------------------------------- |
-| As credenciais fornecidas (usuário e senha) devem ser válidas. |
-
-| **Passos**                                                         |
-| :---------------------------------------------------------------- |
-| **DADO** que estamos na página de login do SIFIT                  |
-| **E** preenchemos um usuário válido no campo "Login"               |
-| **E** preenchemos uma senha válida no campo "Senha"               |
-| **QUANDO** clicarmos no botão "Entrar"                             |
-| **ENTÃO** seremos redirecionados para a Página Inicial do sistema  |
-
-| **Critérios de aceitação**                                       |
-| :-------------------------------------------------------------- |
-| O redirecionamento para a Página Inicial deve ocorrer com sucesso. |
-
----
-
-### Caso de Teste 02: Tentativa de login com senha incorreta.
-
-| ID        | Descrição                                                  |
-| :-------- | :--------------------------------------------------------- |
-| C01-CT02 | O login falhará quando a senha for inválida ou incorreta. |
-
-| **Pré-condições**                                              |
-| :----------------------------------------------------------- |
-| O usuário informado deve existir no banco de dados do SIFIT.  |
-
-| **Passos**                                                         |
-| :---------------------------------------------------------------- |
-| **DADO** que estamos na página de login do SIFIT                  |
-| **E** preenchemos um usuário válido no campo "Login"               |
-| **E** preenchemos "senha_incorreta" no campo "Senha"               |
-| **QUANDO** clicarmos no botão "Entrar"                             |
-| **ENTÃO** uma mensagem de erro indicando credenciais inválidas será exibida |
-
-| **Critérios de aceitação**                                       |
-| :-------------------------------------------------------------- |
-| A mensagem de erro de autenticação deve ser exibida ao usuário. |
-
----
-
-### Caso de Teste 03: Tentativa de login com campos em branco.
+### Caso de Teste 01: Autenticação com credenciais válidas e opção de persistência de sessão.
 
 | ID        | Descrição                                                          |
 | :-------- | :----------------------------------------------------------------- |
-| C01-CT03 | O login falhará quando os campos obrigatórios estiverem em branco. |
+| C01-CT01 | Efetuar login com dados válidos e validar o redirecionamento para a página inicial. |
 
 | **Pré-condições**                                              |
 | :----------------------------------------------------------- |
-| Nenhuma.                                                     |
+| O usuário deve possuir credenciais ativas cadastradas no SIFIT. |
 
 | **Passos**                                                         |
 | :---------------------------------------------------------------- |
-| **DADO** que estamos na página de login do SIFIT                  |
-| **E** deixamos os campos "Login" e "Senha" em branco               |
+| **DADO** que estamos na tela de login do SIFIT                    |
+| **E** preenchemos as credenciais nos campos "Login" e "Senha"     |
+| **E** opcionalmente marcamos a caixa de seleção "Manter conectado" |
 | **QUANDO** clicarmos no botão "Entrar"                             |
-| **ENTÃO** A mensagem de erro de autenticação deve ser exibida ao usuário |
+| **ENTÃO** o sistema deve autenticar o usuário e redirecionar para a Página Inicial |
 
 | **Critérios de aceitação**                                       |
 | :-------------------------------------------------------------- |
-| Os campos obrigatórios devem indicar a necessidade de preenchimento. |
+| A sessão deve ser iniciada e a Página Inicial carregada com sucesso. |
 
 ---
 
-### Caso de Teste 04: Funcionalidade de recuperação de senha.
+### Caso de Teste 02: Validação de erros na autenticação com credenciais inválidas ou campos vazios.
 
-| ID        | Descrição                                                         |
-| :-------- | :---------------------------------------------------------------- |
-| C01-CT04 | Validação do fluxo do link "Esqueci minha senha" na tela de login. |
+| ID        | Descrição                                                          |
+| :-------- | :----------------------------------------------------------------- |
+| C01-CT02 | Garantir o bloqueio de acesso ao submeter credenciais incorretas ou formulário em branco. |
 
 | **Pré-condições**                                              |
 | :----------------------------------------------------------- |
-| Nenhuma.                                                     |
+| O usuário deve estar na tela de login do SIFIT.                   |
 
 | **Passos**                                                         |
 | :---------------------------------------------------------------- |
-| **DADO** que estamos na página de login do SIFIT                  |
-| **QUANDO** clicarmos no link "Esqueci minha senha"                |
-| **ENTÃO** seremos redirecionados para a tela de redefinição/recuperação de credenciais |
+| **DADO** que estamos na tela de login do SIFIT                    |
+| **E** informamos credenciais inválidas ou deixamos os campos "Login" e "Senha" em branco |
+| **QUANDO** clicarmos no botão "Entrar"                             |
+| **ENTÃO** o acesso deve ser negado e uma mensagem de alerta exibida ao usuário |
 
 | **Critérios de aceitação**                                       |
 | :-------------------------------------------------------------- |
-| A tela de redefinição de senha deve ser carregada corretamente. |
+| O sistema deve proibir a autenticação e indicar a falha de credenciais ou preenchimento. |
+
+---
+
+### Caso de Teste 03: Redirecionamento para o fluxo de redefinição de senha.
+
+| ID        | Descrição                                                          |
+| :-------- | :----------------------------------------------------------------- |
+| C01-CT03 | Validar o atalho "Esqueci minha senha" para recuperação de acesso. |
+
+| **Pré-condições**                                              |
+| :----------------------------------------------------------- |
+| O usuário deve estar na tela de login do SIFIT.                   |
+
+| **Passos**                                                         |
+| :---------------------------------------------------------------- |
+| **DADO** que estamos na tela de login do SIFIT                    |
+| **QUANDO** clicarmos no link "Esqueci minha senha"                 |
+| **ENTÃO** o sistema deve redirecionar para a tela de redefinição de credenciais |
+
+| **Critérios de aceitação**                                       |
+| :-------------------------------------------------------------- |
+| A tela de recuperação de senha deve ser exibida corretamente. |
