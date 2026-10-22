@@ -1,6 +1,6 @@
-# CT_RF17_Inteligencia_Automacao_e_Prevencao_de_Evasao.md
+# CT_RF17_Inteligencia_e_Automacao.md
 
-## Cenário 17: Motor de Automações, Algoritmo de Prevenção de Evasão e Métricas de IA.
+## Cenário 17: Motor de Automações, Algoritmo e Métricas de IA.
 
 ### Caso de Teste 01: Monitorizar e disparar automações de comunicação.
 
