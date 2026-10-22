@@ -173,11 +173,10 @@ O **SIFIT** é uma plataforma integrada de gestão para academias, estúdios e b
 
 ---
 
-### 🤖 **RF17 - Inteligência, Automação e Prevenção de Evasão**
+### 🤖 **RF17 - Inteligência e Automação**
 **Descrição**: Motor de regras e inteligência voltado para a retenção de alunos e comunicação automática.
 - **Funcionalidades esperadas**:
   * **Central de Automações**: Monitoramento de regras ativas (Risco de Evasão, Mensagens de Aniversariantes) via WhatsApp.
-  * **Prevenção de Evasão**: Algoritmo que analisa a queda de frequência nas entradas da catraca e classifica o aluno em níveis de risco (Alto, Médio, Baixo), disparando alertas ao gestor.
   * **Resultados de IA**: Painel consolidado com contagem de automações executadas, relatórios enviados, alunos monitorados e métrica de frequência média.
 
 ---
