@@ -45,7 +45,7 @@
 
 | **Critérios de aceitação**                                       |
 | :-------------------------------------------------------------- |
-| O sistema deve proibir a autenticação e indicar a falha de credenciais ou preenchimento. |
+| O sistema deve proibir a autenticação e indicar a falha de credenciais ou preenchimento.  |
 
 ---
 
