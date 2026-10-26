@@ -10,7 +10,7 @@
 - **Suíte de Testes Relacionada**: `CT_RF01.md` ao `CT_RF18.md` (18 Módulos Funcionais)
 - **Tipo de Teste**: Teste Funcional Manual (BDD / Cenários de Fronteira / Fluxos Críticos)
 - **Data do Documento**: 22/10/2026
-- **Responsável**: Equipe de Garantia de Qualidade e Testes (QA SIFIT)
+- **Responsável**: Kaiki Teles de Andrade
 
 ---
 
@@ -62,7 +62,7 @@ Realizar a verificação funcional completa e sistemática da plataforma SIFIT, 
 
 - **Desenvolvimento Guiado por Comportamento (BDD)**: Estruturação dos cenários em sintaxe **Dado / Quando / Então**.
 - **Particionamento por Classes de Equivalência**: Validação de intervalos de datas, idades e faixas horárias.
-- **Análise de Valor Limite**: Verificação dos limites de tolerância para bloqueio de inadimplentes (ex: regra de 2 dias de atraso).
+- **Análise de Valor Limite**: Verificação dos limites de tolerância para bloqueio de inadimplentes.
 - **Caminho Feliz (Happy Path)**: Conclusão completa de fluxos principais sem interrupções.
 - **Testes de Exceção e Negativos**: Validação de formulários com campos em branco, credenciais inválidas e duplicidade de dados.
 
@@ -155,7 +155,7 @@ Os defeitos registrados deverão conter obrigatoriamente a seguinte estrutura:
 
 ## 📁 12. Documentos Entregáveis do Projeto
 
-A documentação mestre do projeto de testes do SIFIT é composta por 4 pilares interligados:
+A documentação mestre do projeto de testes do SIFIT é composta por 5 pilares interligados:
 
 1. **`1-Analise_de_Requisitos.md`**: Mapeamento detalhado das regras operacionais do sistema.
 2. **`2-Plano_de_Testes.md`**: Este documento mestre com a estratégia, cronograma e diretrizes de teste.
