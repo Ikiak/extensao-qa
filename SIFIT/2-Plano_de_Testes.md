@@ -51,7 +51,7 @@ Realizar a verificação funcional completa e sistemática da plataforma SIFIT, 
 
 ## 🔧 4. Ferramentas Utilizadas
 
-- **Navegadores Homologados**: Google Chrome, Mozilla Firefox e Microsoft Edge.
+- **Navegadores Homologados**: Google Chrome, Mozilla Firefox, Microsoft Edge e Brave.
 - **Ferramentas de Inspeção**: Chrome DevTools (Aba Network para inspecionar requisições da Evolution API e Pagar.me, Aba Console para erros de scripts).
 - **Leitores de Documentos**: Visualizador nativo de PDF para relatórios exportados.
 - **Gestão de Documentação de QA**: Ficheiros de Casos de Teste (`.md`), `3-Relatorio_de_Bugs.md` e `4-Relatorio_de_Testes.md`.
